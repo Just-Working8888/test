@@ -1,0 +1,114 @@
+.reviewForm{
+	font-size: 14px;
+	line-height: 24px;
+	display: grid;
+	grid-template-columns: [start] auto 1fr auto [end];
+	gap: 20px 30px;
+	align-items: center;
+}
+
+.description, .submit{
+	grid-column: start / end;
+}
+
+.description{
+	min-height: 50px;
+}
+
+.title{
+	justify-self: flex-start;
+}
+
+.rating{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.submit{
+	display: flex;
+	align-items: center;
+}
+
+.info{
+	margin-left: 15px;
+}
+
+.statusPanel{
+	position: relative;
+	padding: 15px;
+	border-radius: 5px;
+	margin-top: 20px;
+}
+
+.successMessage{
+	background: var(--green-light);
+}
+
+.successTitle{
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.closeIcon{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	cursor: pointer;
+	color: var(--green);
+}
+
+.errorMessage{
+	background: var(--red);
+	color: var(--white);
+}
+
+.errorTitle{
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.closeIconError{
+	position: absolute;
+	top: 6px;
+	right: 6px;
+	cursor: pointer;
+	color: var(--white);
+}
+
+@media screen and (max-width: 1100px){
+	.reviewForm{
+		grid-template-columns: [start] 1fr 1fr [end];
+	}
+
+	.title{
+		justify-self: initial;
+	}
+}
+
+@media screen and (max-width: 880px){
+	.reviewForm{
+		grid-template-columns: [start] 1fr [end];
+	}
+
+	.title{
+		justify-self: initial;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.submit{
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 5px;
+	}
+
+	.submitButton{
+		width: 100%;
+		justify-content: center;
+	}
+
+	.info{
+		margin-left: 0;
+	}
+}

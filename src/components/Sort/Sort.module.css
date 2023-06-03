@@ -1,0 +1,25 @@
+.sort{
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
+.sort span{
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	cursor: pointer;
+}
+
+.sort .active{
+	color: var(--primary);
+	font-weight: bold;
+}
+
+.sort .active svg{
+	display: block;
+}
+
+.sort span svg{
+	display: none;
+}

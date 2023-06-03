@@ -1,0 +1,40 @@
+.header{
+	display: none;
+}
+
+.logo{
+	font-size: 50px;
+	color: var(--primary);
+}
+
+.top{
+	display: grid;
+	grid-template-columns: 1fr 40px;
+	margin: 15px 15px 0 15px;
+	align-items: center;
+}
+
+.mobileMenu{
+	position: fixed;
+	top: 0;
+	padding: 20px 10px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	overflow-y: scroll;
+	background: #f5f6f8;
+	z-index: 10;
+}
+
+
+@media (max-width: 769px) {
+	.header {
+		display: block;
+	}
+}
+
+.closeMenu{
+	position: fixed;
+	top: 20px;
+	right: 15px;
+}

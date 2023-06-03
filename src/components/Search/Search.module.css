@@ -1,0 +1,19 @@
+.search{
+	position: relative;
+	width: 100%;
+}
+
+.input{
+	width: 100%;
+}
+
+.button{
+	position: absolute;
+	top: 4px;
+	right: 3px;
+	padding: 7px;
+}
+
+.button svg{
+
+}

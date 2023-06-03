@@ -1,0 +1,29 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans', sans-serif;
+  color: var(--black);
+  background: #f5f6f8;
+}
+
+a{
+  text-decoration: none;
+}
+
+:root{
+  --black: #3b434e;
+  --gray-light: #ebebeb;
+  --white: white;
+  --gray: #a4a4a4;
+  --gray-dark: #6c7077;
+  --primary: #7351f5;
+  --primary-hover: #5935e5;
+  --red: #fc836d;
+  --green: #007b48;
+  --green-light: #c8f8e4;
+  --font-family: 'Noto Sans', sans-serif;
+}

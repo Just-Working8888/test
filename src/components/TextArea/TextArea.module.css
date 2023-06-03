@@ -1,0 +1,33 @@
+.textareaWrapper{
+	width: 100%;
+	position: relative;
+}
+
+.textArea{
+	width: 100%;
+	padding: 7px 15px;
+	color: var(--black);
+	border: none;
+	outline-color: var(--primary);
+	background: var(--white);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+	border-radius: 5px;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: var(--font-family);
+}
+
+.textArea.error{
+	border: 1px solid var(--red);
+}
+
+.textareaWrapper span{
+	color: var(--red);
+	position: absolute;
+	bottom: -15px;
+	left: 0;
+}
+
+.textArea::placeholder{
+	color: var(--gray);
+}

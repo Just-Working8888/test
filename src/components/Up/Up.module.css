@@ -1,0 +1,19 @@
+.up{
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	background: var(--primary);
+	width: 40px;
+	height: 40px;
+	border: none;
+	color: white;
+	border-radius: 5px;
+}
+
+.up svg{
+	font-size: 30px;
+}
+
+.up:hover{
+	background: var(--primary-hover);
+}

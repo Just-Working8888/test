@@ -1,0 +1,32 @@
+.inputWrapper{
+	position: relative;
+}
+
+.inputWrapper span{
+	position: absolute;
+	left: 0;
+	bottom: -22px;
+	color: var(--red);
+}
+
+.input{
+	width: 100%;
+	padding: 7px 15px;
+	color: var(--black);
+	border: none;
+	outline-color: var(--primary);
+	background: var(--white);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, .05);
+	border-radius: 5px;
+	font-size: 15px;
+	line-height: 22px;
+	font-family: var(--font-family);
+}
+
+.input.error{
+	border: 1px solid var(--red);
+}
+
+.input::placeholder{
+	color: var(--gray);
+}
